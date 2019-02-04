@@ -1,0 +1,15 @@
+1. What’s the right role for QA in the software development process?
+
+-- In my opinion, QA should be involved in every stages of the SDLC. It helps in building of a better quality product from the start as QA can provide suggestions on improving quality in each stage given sufficient knowledge and experience.
+
+2. As a QA person, you have 2 weeks to prepare before your team starts writing software. What do you do?
+
+-- I will review the product requirements, understand them along with the features needed for the release, prepare test plan, test scenarios for the release sign off. Also work with the development team to devise and architect unit tests and automated acceptance tests. 
+
+3. When is it appropriate to use automated testing? When is it appropriate to use manual testing?
+
+-- Automated testing should be used when we have tests that have repeated steps. Automated tests does not replace manual testing. Manual testing needed to be done in order to get familiarized with the product and figure out which tests can be automated. 
+
+4. Your dev team has just modified an existing product by adding new features and refactoring the code for old features. The devs claim to have written unit tests; you’re in charge of integration testing. Dedicated teams are handling performance and security testing, so you don’t have to. As is always the case in the real world, you don’t have time to test everything. What factors do you think about as you decide where to focus your testing efforts? How do you decide what not to test?
+
+-- I would test that the new features that got introduced works as expected. I would also test the integration among the systems and ensure that works as expected by picking few end-to-end workflows. I would create a test matrix with features against customer usage/interactions, to test the flow which clients most interact with and skip the ones that will be less interacted with. I would also assess and analyze the risky points where issues might occur.

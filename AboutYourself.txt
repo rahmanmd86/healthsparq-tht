@@ -1,0 +1,7 @@
+1. What excites you about this position?
+
+-- Utilize my knowedge and expertise on analyzing and resolving problems in testing in healthcare domain as well as researching and learning along the way to provide better solutions to deliver quality product.
+
+2. Why do you want to work as SDET whent you have worked as a UI/ backend engineer?
+
+-- I like being an SDET as I get the flavor of both software development and testing. Also get the opportunity to work closely with developers which in turn helps me to design bette tooling and frameworks for assisting with testing and product development as well.

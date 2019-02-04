@@ -1,0 +1,63 @@
+Feature: Sorting data in descending order
+
+Scenario: Sort strings
+    Given a file 'input.csv' exists in 'data' directory
+    And it contains 'Copenhagen,Stockholm,Oslo'
+    When the user runs 'sorted.py' script
+    Then a file 'output.csv' exists in 'data' directory
+    And it contains 'Stockholm,Oslo,Copenhagen'
+
+Scenario: Sort ints
+    Given a file 'input.csv' exists in 'data' directory
+    And it contains '22,33,44'
+    When the user runs 'sorted.py' script
+    Then a file 'output.csv' exists in 'data' directory
+    And it contains '44,33,22'
+
+Scenario: Sort ints and strings in one row
+    Given a file 'input.csv' exists in 'data' directory
+    And it contains 'Copenhagen,Stockholm,Oslo,22,33,44'
+    When the user runs 'sorted.py' script
+    Then a file 'output.csv' exists in 'data' directory
+    And it contains 'Copenhagen,Stockholm,Oslo,44,33,22'
+
+Scenario: Sort ints and strings in multiple rows
+    Given a file 'input.csv' exists in 'data' directory
+    And it contains 'Copenhagen,Stockholm,Oslo'
+    And it contains '22,33,44'
+    When the user runs 'sorted.py' script
+    Then a file 'output.csv' exists in 'data' directory
+    And it contains 'Copenhagen,Stockholm,Oslo'
+    And it contains '44,33,22'
+
+Scenario: Sorts data with different column size
+    Given a file 'input.csv' exists in 'data' directory
+    And it contains 'Copenhagen,Stockholm,Oslo'
+    And it contains 'January,February,March,April,May'
+    When the user runs 'sorted.py' script
+    Then a file 'output.csv' exists in 'data' directory
+    And it contains 'Stockholm,Oslo,Copenhagen'
+    And it contains 'April,February,January,March,May'
+
+Scenario: Sorts special characters
+    Given a file 'input.csv' exists in 'data' directory
+    And it contains '#,%,$,^,!,*,@'
+    When the user runs 'sorted.py' script
+    Then a file 'output.csv' exists in 'data' directory
+    And it contains '^,@,*,%,$,#,!'
+
+Scenario: Fill empty cells with Nan
+    Given a file 'input.csv' exists in 'data' directory
+    And it contains 'Copenhagen,Stockholm,Oslo,,,'
+    When the user runs 'sorted.py' script
+    Then a file 'output.csv' exists in 'data' directory
+    And it contains 'Stockholm,Oslo,Copenhagen,Nan,Nan,Nan'
+
+Scenario: Empty input file
+    Given a file 'input.csv' exists in 'data' directory
+    And it contains ''
+    When the user runs 'sorted.py' script
+    Then a file 'output.csv' should not exist in 'data' directory
+
+
+    

@@ -23,6 +23,10 @@ hs-sorted/
 * numpy
 * pandas
 
+# Limitations
+
+The script uses `pandas` and `numpy` libraries which does not support csv files with different column size. If required, the implementation can be updated to use `csv` library.
+
 # Docker Setup (Via [Runnable](https://runnable.com/docker/))
 
 [Install on Mac](https://runnable.com/docker/install-docker-on-macos)
@@ -60,10 +64,10 @@ hs-sorted/
 -- Run below commands to setup the environment:
 
 ```
-pip install virtualenv
-virtualenv venv
-source venv/bin/activate
-pip install -r requirements
+$ pip install virtualenv
+$ virtualenv venv
+$ source venv/bin/activate
+$ pip install -r requirements.txt
 ```
 -- Specify `input.csv` in `data` directory
 

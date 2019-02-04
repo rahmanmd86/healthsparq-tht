@@ -1,0 +1,27 @@
+1. In your opinion, what’s helpful about version control systems? What’s annoying about them?
+
+Pros
+-- Easy to share code and collaborate among individuals and teams
+-- Tracking changes in feature development, limitations and defects
+-- Restoring to a previous version
+-- Tracking change history
+
+
+2. What are some pros and cons of using Docker to develop, test, and deploy software?
+
+Pros
+-- Lightweight, container based architecture
+-- Hassle free for environment setup, quick OS spin up
+-- Requires less memory space
+-- Easier to ship same code across different environments like sandbox, testing, staging and production
+-- Efficient for continuous integration and deployments
+
+Cons
+-- Copying files from image to host
+-- Lack of gui can be hectic for some users
+-- Lack of monitoring for container processes
+
+3. How do you choose which language to use for a given task? How did you choose the language for the programming exercise above?
+
+I chose python because there are already libraries avalible to handle large datasets like pandas and numpy. Also almost no setup was required to get started and make a working script.
+
